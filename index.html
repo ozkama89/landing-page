@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מהילד שהרס הכל למהנדס שמפתח את המחר - הרצאה מעוררת השראה</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('15304379_10208007151362185_1805450103099474109_o.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .rtl {
+            direction: rtl;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #3b82f6; /* blue-500 */
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+        .contact-card {
+            transition: all 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Testimonial Slider */
+        .testimonial-slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .testimonial-slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 rtl">
+
+<!-- Header -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl md:text-2xl font-bold text-blue-600">הסיפור שלי</h1>
+        <a href="#contact" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">הזמינו הרצאה</a>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-bg text-white text-center py-20 md:py-32">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">מהילד שהרס הכל, למהנדס שמפתח את המחר</h2>
+        <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto">סיפור על התמודדות, צמיחה ותקווה - איך הופכים את נקודת הפתיחה הקשה ביותר למקפצה להצלחה.</p>
+        <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition duration-300">אני רוצה לשמוע עוד</a>
+    </div>
+</section>
+
+<main>
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 section-title">המסע שלי, ההשראה שלכם</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2 text-right space-y-4 text-lg">
+                    <p>גדלתי בעיר בפריפריה למשפחה פשוטה. כילד, הייתי מלא באנרגיות שלא ידעתי לתעל, מה שהוביל אותי לשבע שנים בפנימיות טיפוליות. במקביל, התמודדתי עם מחלת הסרטן של אמי ופטירתה כשהייתי בן 12.</p>
+                    <p>זו הייתה נקודת השפל, אבל גם נקודת המפנה. שם, החלטתי לקחת אחריות על החיים שלי.</p>
+                    <p class="font-bold text-blue-600">הבנתי שלא משנה מאיפה באת ומה היו תנאי הפתיחה שלך - כמעט הכל ניתן לשינוי אם רק נרצה, נאמין ונעבוד קשה כדי להשיג את זה.</p>
+                    <p>מהפערים הלימודיים ומהקשיים החברתיים, דרך הצטיינות בבגרות, שירות טכנולוגי משמעותי בצבא, תואר בהנדסת תוכנה וכיום עבודה בהייטק - אני חי את החלום. לא כי הוא נפל עליי, אלא כי בניתי אותו, צעד אחר צעד.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative w-full max-w-md mx-auto">
+                        <img src="316546142_10222533712677139_1251406265901259442_n.jpeg" alt="תמונה של הדובר כמבוגר מחייך בים עם הכלב שלו" class="rounded-xl shadow-2xl w-full h-auto">
+                        <img src="childwood3.jpeg" alt="תמונה של הדובר בילדותו" class="absolute w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-lg -bottom-8 -right-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Story Timeline -->
+    <section id="story" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">נקודות ציון בדרך</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1: The Challenge -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" /></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">האתגר</h4>
+                    <p class="text-gray-600">ילדות מאתגרת בפנימיות, התמודדות עם מחלתה של אמי ופטירתה, ופערים לימודיים גדולים.</p>
+                </div>
+                <!-- Card 2: The Decision -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">ההחלטה</h4>
+                    <p class="text-gray-600">"אם אין אני לי, מי לי?" - קבלת החלטה לקחת אחריות, להשקיע בלימודים ולבנות עתיד טוב יותר.</p>
+                </div>
+                <!-- Card 3: The Climb -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">הטיפוס</h4>
+                    <p class="text-gray-600">הצטיינות בבגרות, לימודי הנדסאי תוכנה, שירות טכנולוגי והשלמת תואר בהנדסה תוך כדי שירות צבאי.</p>
+                </div>
+                <!-- Card 4: The Summit -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 4v4m-2-2h4M17 3l4 4M3 17l4 4" /></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">הפסגה (הנוכחית)</h4>
+                    <p class="text-gray-600">מהנדס תוכנה מצליח, חי חיים מאוזנים ומלאי משמעות, ומעביר את הסיפור הלאה כדי לתת השראה לאחרים.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">מהילדות ועד היום</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="childwood2.jpeg" alt="תמונת ילדות קבוצתית" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="17621908_10208916260449344_1543130665513587936_o.jpg" alt="מטייל על רקע נוף הררי" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="332921444_163299416496762_2486957251384083188_n.jpg" alt="רץ במרתון" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="270366932_10220878806665523_8595892619874371444_n.jpg" alt="עושה סקי בהרים מושלגים" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="14712503_10207566504986301_9131717173396262015_o.jpg" alt="סלפי בטיול" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="322384433_542708817793655_255606734311300400_n.jpeg" alt="מחזיק שני כלבי פודל" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="childwood1.jpeg" alt="ילדים בבריכה" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+                <div class="overflow-hidden rounded-lg shadow-md"><img src="15304379_10208007151362185_1805450103099474109_o.jpeg" alt="יושב על הר" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Lecture Section -->
+    <section id="lecture-info" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 section-title">למה כדאי להזמין את ההרצאה?</h3>
+            <div class="max-w-4xl mx-auto text-lg text-right grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h4 class="font-bold text-xl mb-3 text-blue-600">מה תקבלו מההרצאה?</h4>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>כלים מעשיים להתמודדות עם אתגרים וכישלונות.</li>
+                        <li>השראה ומוטיבציה להציב מטרות ולהשיג אותן.</li>
+                        <li>הבנה שכוח רצון והתמדה יכולים לשנות כל מציאות.</li>
+                        <li>הצצה לעולם ההייטק ולדרך שמובילה אליו.</li>
+                        <li>סיפור אישי אותנטי, מרגש ומעורר תקווה.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h4 class="font-bold text-xl mb-3 text-blue-600">למי ההרצאה מתאימה?</h4>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>בתי ספר:</strong> תלמידי חטיבה ותיכון, צוותי חינוך.</li>
+                        <li><strong>חברות וארגונים:</strong> עובדים ומנהלים, אירועי חברה, ימי גיבוש והעשרה.</li>
+                        <li><strong>מסגרות צבאיות:</strong> חיילים ומפקדים לפני ובמהלך השירות.</li>
+                        <li><strong>כל מי שזקוק לזריקת מוטיבציה</strong> ומאמין בכוחו של הסיפור האנושי.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">אנשים ממליצים</h3>
+            <div class="max-w-3xl mx-auto relative">
+                <!-- Testimonial Slides -->
+                <div id="testimonial-slider" class="relative bg-white rounded-lg shadow-lg p-8 md:p-12 min-h-[250px] flex items-center justify-center">
+                    <div class="testimonial-slide active">
+                        <blockquote class="text-center text-gray-700 text-lg md:text-xl italic">
+                            "הרצאה שפותחת את הראש ואת הלב. עוז מצליח להעביר מסר של התמדה ותקווה בצורה כל כך אותנטית ומרגשת. חובה לכל נער ונערה בישראל."
+                        </blockquote>
+                        <footer class="text-center mt-4 font-bold text-blue-600">- יעל כהן, רכזת שכבה -</footer>
+                    </div>
+                    <div class="testimonial-slide">
+                        <blockquote class="text-center text-gray-700 text-lg md:text-xl italic">
+                            "הסיפור של עוז הוא הוכחה חיה שהכל אפשרי. יצאנו מההרצאה עם המון מוטיבציה וכלים מעשיים להתמודדות עם אתגרים. מומלץ בחום!"
+                        </blockquote>
+                        <footer class="text-center mt-4 font-bold text-blue-600">- דני לוי, מנהל צוות פיתוח -</footer>
+                    </div>
+                    <div class="testimonial-slide">
+                        <blockquote class="text-center text-gray-700 text-lg md:text-xl italic">
+                            "אחד הסיפורים מעוררי ההשראה ששמעתי. עוז ריתק אותנו מהרגע הראשון ונתן לנו פרספקטיבה חדשה על החיים. תודה על הרצאה בלתי נשכחת."
+                        </blockquote>
+                        <footer class="text-center mt-4 font-bold text-blue-600">- סמלת ראשונה, חיל החינוך -</footer>
+                    </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <button id="prevBtn" class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="nextBtn" class="absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+            <!-- Navigation Dots -->
+            <div id="dots-container" class="flex justify-center mt-6 space-x-2 space-x-reverse">
+                <!-- Dots will be generated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-4 section-title">רוצים לשמוע עוד? דברו איתי</h3>
+            <p class="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto">אני זמין לכל שאלה, התייעצות או הזמנת הרצאה. בחרו את הדרך הנוחה לכם ליצירת קשר.</p>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Email -->
+                <div class="contact-card bg-white p-6 rounded-lg shadow-md flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="mr-4 text-right">
+                            <h4 class="font-bold text-lg">שלחו מייל</h4>
+                            <a href="mailto:ozkama@gmail.com" class="text-gray-600 hover:underline">ozkama@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <button onclick="copyEmail()" class="p-2 rounded-md hover:bg-gray-200 transition-colors">
+                            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        </button>
+                        <span id="copyFeedback" class="absolute -top-8 right-1/2 translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 transition-opacity duration-300 whitespace-nowrap">הועתק!</span>
+                    </div>
+                </div>
+                <!-- Phone -->
+                <a href="tel:+972506200229" class="contact-card bg-white p-6 rounded-lg shadow-md flex items-center">
+                    <div class="bg-blue-100 p-3 rounded-full">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    </div>
+                    <div class="mr-4 text-right">
+                        <h4 class="font-bold text-lg">חייגו עכשיו</h4>
+                        <p class="text-gray-600">050-6200229</p>
+                    </div>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/972506200229" target="_blank" rel="noopener noreferrer" class="contact-card bg-white p-6 rounded-lg shadow-md flex items-center">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.75 13.96c.25.13.41.2.46.3.05.1.05.61-.21 1.18-.26.57-1.03 1.1-1.61 1.18-.58.08-1.17.04-1.84-.22-.67-.26-1.39-.63-2.09-1.07a9.122 9.122 0 01-1.63-1.3l-.6.62a.992.992 0 01-1.4-.01l-1.1-1.1a.992.992 0 01-.01-1.4l.6-.6a.981.981 0 01.62-.28c.18 0 .36.05.52.19l.99.99c.14.14.22.33.22.53s-.08.39-.22.53l-.42.42c-.1.1-.15.22-.15.33s.05.22.15.33l1.15 1.15c.1.1.22.15.33.15s.23-.05.33-.15l.42-.42c.14-.14.33-.22.53-.22s.39.08.53.22l.99.99zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    </div>
+                    <div class="mr-4 text-right">
+                        <h4 class="font-bold text-lg">שלחו הודעה ב-WhatsApp</h4>
+                        <p class="text-gray-600">050-6200229</p>
+                    </div>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/ozkama/" target="_blank" rel="noopener noreferrer" class="contact-card bg-white p-6 rounded-lg shadow-md flex items-center">
+                    <div class="bg-blue-100 p-3 rounded-full">
+                        <svg class="w-8 h-8 text-blue-700" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div class="mr-4 text-right">
+                        <h4 class="font-bold text-lg">צרו קשר בלינקדאין</h4>
+                        <p class="text-gray-600">ozkama</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-6">
+    <div class="container mx-auto px-6">
+        <p>&copy; 2025 | כל הזכויות שמורות | עוז קמה - הרצאה מעוררת השראה</p>
+    </div>
+</footer>
+
+<script>
+    function copyEmail() {
+        const email = 'ozkama@gmail.com';
+        const feedback = document.getElementById('copyFeedback');
+
+        const textarea = document.createElement('textarea');
+        textarea.value = email;
+        textarea.style.position = 'absolute';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            document.execCommand('copy');
+            feedback.classList.remove('opacity-0');
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
+        document.body.removeChild(textarea);
+
+        setTimeout(() => {
+            feedback.classList.add('opacity-0');
+        }, 2000);
+    }
+
+    // Testimonial Slider Logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const dotsContainer = document.getElementById('dots-container');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function createDots() {
+            slides.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300', 'hover:bg-gray-400', 'transition');
+                dot.addEventListener('click', () => {
+                    showSlide(i);
+                    resetInterval();
+                });
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dotsContainer.children[i].classList.remove('bg-blue-500');
+                dotsContainer.children[i].classList.add('bg-gray-300');
+            });
+
+            currentSlide = (n + slides.length) % slides.length;
+
+            slides[currentSlide].classList.add('active');
+            dotsContainer.children[currentSlide].classList.add('bg-blue-500');
+            dotsContainer.children[currentSlide].classList.remove('bg-gray-300');
+        }
+
+        function next() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prev() {
+            showSlide(currentSlide - 1);
+        }
+
+        function startInterval() {
+            slideInterval = setInterval(next, 5000); // Change slide every 5 seconds
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startInterval();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            next();
+            resetInterval();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prev();
+            resetInterval();
+        });
+
+        createDots();
+        showSlide(0);
+        startInterval();
+    });
+</script>
+
+</body>
+</html>
