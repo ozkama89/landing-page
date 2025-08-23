@@ -37,16 +37,16 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-        /* Testimonial Slider */
-        .testimonial-slide {
+        /* Sliders General Style */
+        .slider-item {
             display: none;
-            animation: fadeIn 0.5s ease-in-out;
+            animation: fadeIn 1.5s ease-in-out;
         }
-        .testimonial-slide.active {
+        .slider-item.active {
             display: block;
         }
         @keyframes fadeIn {
-            from { opacity: 0; }
+            from { opacity: 0.3; }
             to { opacity: 1; }
         }
     </style>
@@ -83,9 +83,8 @@
                     <p>מהפערים הלימודיים ומהקשיים החברתיים, דרך הצטיינות בבגרות, שירות טכנולוגי משמעותי בצבא, תואר בהנדסת תוכנה וכיום עבודה בהייטק - אני חי את החלום. לא כי הוא נפל עליי, אלא כי בניתי אותו, צעד אחר צעד.</p>
                 </div>
                 <div class="md:w-1/2">
-                    <div class="relative w-full max-w-md mx-auto">
-                        <img src="316546142_10222533712677139_1251406265901259442_n.jpeg" alt="תמונה של הדובר כמבוגר מחייך בים עם הכלב שלו" class="rounded-xl shadow-2xl w-full h-auto">
-                        <img src="childwood3.jpeg" alt="תמונה של הדובר בילדותו" class="absolute w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-lg -bottom-8 -right-8">
+                    <div id="about-image-container" class="relative w-full max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden min-h-[450px]">
+                        <!-- Images for slider will be injected here by JS -->
                     </div>
                 </div>
             </div>
@@ -133,23 +132,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">מהילדות ועד היום</h3>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="childwood2.jpeg" alt="תמונת ילדות קבוצתית" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="17621908_10208916260449344_1543130665513587936_o.jpg" alt="מטייל על רקע נוף הררי" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="332921444_163299416496762_2486957251384083188_n.jpg" alt="רץ במרתון" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="270366932_10220878806665523_8595892619874371444_n.jpg" alt="עושה סקי בהרים מושלגים" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="14712503_10207566504986301_9131717173396262015_o.jpg" alt="סלפי בטיול" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="322384433_542708817793655_255606734311300400_n.jpeg" alt="מחזיק שני כלבי פודל" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="childwood1.jpeg" alt="ילדים בבריכה" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-                <div class="overflow-hidden rounded-lg shadow-md"><img src="15304379_10208007151362185_1805450103099474109_o.jpeg" alt="יושב על הר" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"></div>
-            </div>
-        </div>
-    </section>
-
     <!-- The Lecture Section -->
     <section id="lecture-info" class="py-16 md:py-24">
         <div class="container mx-auto px-6 text-center">
@@ -185,19 +167,19 @@
             <div class="max-w-3xl mx-auto relative">
                 <!-- Testimonial Slides -->
                 <div id="testimonial-slider" class="relative bg-white rounded-lg shadow-lg p-8 md:p-12 min-h-[250px] flex items-center justify-center">
-                    <div class="testimonial-slide active">
+                    <div class="slider-item testimonial-slide active">
                         <blockquote class="text-center text-gray-700 text-lg md:text-xl italic">
                             "הרצאה שפותחת את הראש ואת הלב. עוז מצליח להעביר מסר של התמדה ותקווה בצורה כל כך אותנטית ומרגשת. חובה לכל נער ונערה בישראל."
                         </blockquote>
                         <footer class="text-center mt-4 font-bold text-blue-600">- יעל כהן, רכזת שכבה -</footer>
                     </div>
-                    <div class="testimonial-slide">
+                    <div class="slider-item testimonial-slide">
                         <blockquote class="text-center text-gray-700 text-lg md:text-xl italic">
                             "הסיפור של עוז הוא הוכחה חיה שהכל אפשרי. יצאנו מההרצאה עם המון מוטיבציה וכלים מעשיים להתמודדות עם אתגרים. מומלץ בחום!"
                         </blockquote>
                         <footer class="text-center mt-4 font-bold text-blue-600">- דני לוי, מנהל צוות פיתוח -</footer>
                     </div>
-                    <div class="testimonial-slide">
+                    <div class="slider-item testimonial-slide">
                         <blockquote class="text-center text-gray-700 text-lg md:text-xl italic">
                             "אחד הסיפורים מעוררי ההשראה ששמעתי. עוז ריתק אותנו מהרגע הראשון ונתן לנו פרספקטיבה חדשה על החיים. תודה על הרצאה בלתי נשכחת."
                         </blockquote>
@@ -309,16 +291,20 @@
         }, 2000);
     }
 
-    // Testimonial Slider Logic
-    document.addEventListener('DOMContentLoaded', function() {
-        const slides = document.querySelectorAll('.testimonial-slide');
-        const nextBtn = document.getElementById('nextBtn');
-        const prevBtn = document.getElementById('prevBtn');
-        const dotsContainer = document.getElementById('dots-container');
+    // Generic Slider Logic
+    function initializeSlider(sliderId, slideClass, nextBtnId, prevBtnId, dotsContainerId, intervalTime) {
+        const slides = document.querySelectorAll(`.${slideClass}`);
+        if (slides.length === 0) return;
+
+        const nextBtn = document.getElementById(nextBtnId);
+        const prevBtn = document.getElementById(prevBtnId);
+        const dotsContainer = document.getElementById(dotsContainerId);
         let currentSlide = 0;
         let slideInterval;
 
         function createDots() {
+            if (!dotsContainer) return;
+            dotsContainer.innerHTML = ''; // Clear existing dots
             slides.forEach((_, i) => {
                 const dot = document.createElement('button');
                 dot.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300', 'hover:bg-gray-400', 'transition');
@@ -333,15 +319,19 @@
         function showSlide(n) {
             slides.forEach((slide, i) => {
                 slide.classList.remove('active');
-                dotsContainer.children[i].classList.remove('bg-blue-500');
-                dotsContainer.children[i].classList.add('bg-gray-300');
+                if (dotsContainer && dotsContainer.children[i]) {
+                    dotsContainer.children[i].classList.remove('bg-blue-500');
+                    dotsContainer.children[i].classList.add('bg-gray-300');
+                }
             });
 
             currentSlide = (n + slides.length) % slides.length;
 
             slides[currentSlide].classList.add('active');
-            dotsContainer.children[currentSlide].classList.add('bg-blue-500');
-            dotsContainer.children[currentSlide].classList.remove('bg-gray-300');
+            if (dotsContainer && dotsContainer.children[currentSlide]) {
+                dotsContainer.children[currentSlide].classList.add('bg-blue-500');
+                dotsContainer.children[currentSlide].classList.remove('bg-gray-300');
+            }
         }
 
         function next() {
@@ -353,7 +343,9 @@
         }
 
         function startInterval() {
-            slideInterval = setInterval(next, 5000); // Change slide every 5 seconds
+            if (intervalTime > 0) {
+                slideInterval = setInterval(next, intervalTime);
+            }
         }
 
         function resetInterval() {
@@ -361,19 +353,47 @@
             startInterval();
         }
 
-        nextBtn.addEventListener('click', () => {
-            next();
-            resetInterval();
-        });
+        if (nextBtn && prevBtn) {
+            nextBtn.addEventListener('click', () => {
+                next();
+                resetInterval();
+            });
 
-        prevBtn.addEventListener('click', () => {
-            prev();
-            resetInterval();
-        });
+            prevBtn.addEventListener('click', () => {
+                prev();
+                resetInterval();
+            });
+        }
 
         createDots();
         showSlide(0);
         startInterval();
+    }
+
+    // Initialize Sliders on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // About section image slider
+        const aboutImageContainer = document.getElementById('about-image-container');
+        const lectureImages = [
+            'lecture-1.jpg',
+            'lecture-2.jpg',
+            'lecture-3.jpg'
+        ];
+
+        lectureImages.forEach((src, index) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = "תמונה מהרצאה";
+            img.classList.add('slider-item', 'about-slide', 'absolute', 'top-0', 'left-0', 'w-full', 'h-full', 'object-cover');
+            if (index === 0) {
+                img.classList.add('active');
+            }
+            aboutImageContainer.prepend(img);
+        });
+
+        // Initialize sliders
+        initializeSlider('testimonial-slider', 'testimonial-slide', 'nextBtn', 'prevBtn', 'dots-container', 5000);
+        initializeSlider('about-image-container', 'about-slide', null, null, null, 3000); // No buttons/dots, 3s interval
     });
 </script>
 
